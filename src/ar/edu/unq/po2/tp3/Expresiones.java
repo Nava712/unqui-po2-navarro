@@ -24,5 +24,21 @@ public class Expresiones {
 	 * si es un tipo objeto
 	 * 3.¿Si se define una variable de instancia de tipo int cual sería su valor predeterminado? ¿Y si se define una de tipo Integer?
 	 * En el int es 0, en el Integer es null
-	 * 4.Ahora en lugar de definir una variable de instancia se define una variable de método. Es el mismo resultado*/
+	 * 4.Ahora en lugar de definir una variable de instancia se define una variable de método. Es el mismo resultado
+	 * 
+	 
+	 * JERARQUIA DE PAQUETES
+	 * Los paquetes se ordenan de la siguiente forma.
+	 * (package) model
+	 * 			 |_____model.gui
+	 * 			 |     |_____Clase1.java
+	 * 			 |     |_____Clase1.class
+	 * 			 |
+	 * 			 |_____model.stack
+	 * 				   |_____Clase2.java
+	 * 				   |_____Clase2.class
+	 * 
+	 * Si existe una relación directa. Cuando se compila un archivo .java, en la misma carpeta donde este se encuentra, se genera un archivo de tipo
+	 * .class (el ejecutable), el porque de que los .class estén en la misma carpeta es importante porque Java utiliza la estructura de paquetes 
+	 * para resolver las dependencias de clases y para encontrar las clases durante la ejecución*/
 }
