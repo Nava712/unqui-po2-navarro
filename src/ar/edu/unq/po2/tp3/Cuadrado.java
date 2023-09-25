@@ -1,5 +1,4 @@
 package ar.edu.unq.po2.tp3;
-import ar.edu.unq.po2.tp3.Rectangulo;
 
 public class Cuadrado {
 	private Rectangulo cuerpo;
