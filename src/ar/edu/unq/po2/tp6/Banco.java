@@ -1,9 +1,9 @@
 package ar.edu.unq.po2.tp6;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Banco {
-	private List<Cliente> clientes;
+	private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 	//private int capital;
 	//No se hace un constructor, ya que se le van a agregar clientes con "agregarClientes"
 	
