@@ -25,5 +25,13 @@ public class Municipio {
 		Stream<ActividadSemanal> stream = actividades.stream();
 		return stream.mapToInt(a -> a.getDuracion()).sum();
 	}
+	/*
+	No encuentro forma de hacer resolver este ejercicio
+	 
+	public ActividadSemanal actividadConMenorCosto(List<ActividadSemanal> actividades) {
+		Stream<ActividadSemanal> stream = actividades.stream();
+		return stream.min((a1, a2) -> a1.compareTo(a2)).get();;
+	}
+	*/
 	
 }

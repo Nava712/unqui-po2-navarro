@@ -1,9 +1,6 @@
 package ar.edu.unq.po2.tp7;
 
-import java.util.List;
-import java.util.stream.Stream;
-
-public class ActividadSemanal {
+public class ActividadSemanal implements Comparable<ActividadSemanal>{
 	private DiaDeSemana diaDeSemana;
 	private int horaInicio;
 	private int duracion;
@@ -12,8 +9,13 @@ public class ActividadSemanal {
 	public Deporte getDeporte() {
 		return deporte;
 	}
+	
 	public int getDuracion() {
 		return duracion;
+	}
+	
+	public DiaDeSemana getDiaDeSemana() {
+		return diaDeSemana;
 	}
 	
 	public int costoDeActividad(DiaDeSemana diaDeSemana, Deporte deporte) {
@@ -26,5 +28,16 @@ public class ActividadSemanal {
 
 	private int agregadoPorComplejidad(Deporte deporte) {
 		return deporte.getComplejidad() * 200;
-	}	
+	}
+
+	public int compareTo(ActividadSemanal actividad) {
+		int costo = actividad.costoDeActividad(actividad.getDiaDeSemana(), actividad.getDeporte());
+		if (this.costoDeActividad(this.getDiaDeSemana(), this.getDeporte()) < costo) {
+			return 1;
+		} else if (this.costoDeActividad(this.getDiaDeSemana(), this.getDeporte()) == costo){
+			return 0;
+		} else {
+			return -1;
+		}
+	}
 }
